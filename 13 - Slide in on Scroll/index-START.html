@@ -166,9 +166,6 @@
     const sliderImages = document.querySelectorAll('.slide-in');
 
     function checkSlide(e) {
-      console.log(e);
-
-
       sliderImages.forEach(e => {
         const slideInAt = (window.scrollY + window.innerHeight) - e.height / 2;
         const imageBottom = e.offsetTop + e.height;
@@ -180,9 +177,6 @@
         } else {
           e.classList.remove('active');
         }
-
-
-
       });
     }
 
