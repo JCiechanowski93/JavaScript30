@@ -26,6 +26,20 @@
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
+    const team = players;
+
+    console.log(players, team);
+
+    const team2 = players.slice();
+
+    const team3 = [].concat(players);
+
+    const team4 = [...players];
+    team4[3] = 'heeee hawww';
+    console.log(team4);
+
+    const team5 = Array.from(players);
+
     // and we want to make a copy of it.
 
     // You might think we can just do something like this:
@@ -56,6 +70,11 @@
       age: 80
     };
 
+    const cap2 = Object.assign({}, person, {
+      number: 99,
+      age: 12
+    });
+    console.log(cap2);
 
     const wes = {
       name: 'Wes',
