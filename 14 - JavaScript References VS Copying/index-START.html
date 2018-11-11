@@ -56,6 +56,25 @@
       age: 80
     };
 
+
+    const wes = {
+      name: 'Wes',
+      age: 100,
+      social: {
+        twitter: '@wesbos',
+        facebook: 'wesbos.developer'
+      }
+    };
+
+    console.clear();
+    console.log(wes);
+
+    const dev = Object.assign({}, wes);
+
+    const dev2 = JSON.parse(JSON.stringify(wes));
+
+
+
     // and think we make a copy:
 
     // how do we take a copy instead?
